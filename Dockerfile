@@ -1,6 +1,7 @@
 FROM python:3.12 
 
 RUN mkdir /usr/src/app
+RUN mkdir /usr/src/app/output
 COPY src/main.py /usr/src/app
 COPY requirements.txt /usr/src/app
 WORKDIR /usr/src/app
